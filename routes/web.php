@@ -48,5 +48,7 @@ Route::group(['middleware' => 'auth'], function () {
  
     Route::get('admin', [HomeController::class, 'index'])->name('dashboard');
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
- 
+    Route::get('linkstreaming', [HomeController::class, 'linkstreaming'])->name('linkstreaming');
+    Route::get('linkjadwal', [HomeController::class, 'linkjadwal'])->name('linkjadwal');
+    Route::get('linkberita', [HomeController::class, 'linkberita'])->name('linkberita');
 });
